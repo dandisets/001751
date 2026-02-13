@@ -10,46 +10,74 @@ about:
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
-acknowledgement: This work was supported by  Natural Science Foundation of China.
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach:
+  - name: electrophysiological approach
+    schemaKey: ApproachType
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique:
+  - name: current clamp technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 6964257080
+  numberOfFiles: 301
+  numberOfSubjects: 6
   schemaKey: AssetsSummary
-citation: Jing, Junzhan (2026) Electrophysiological Dataset of Local Neuronal Microcircuits
-  in the Primate Anterior Insular Cortex (Version draft) [Data set]. DANDI Archive.
-  https://dandiarchive.org/dandiset/001751/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_9541
+    name: Macaca fascicularis - Cynomolgus monkeys
+    schemaKey: SpeciesType
+  variableMeasured:
+  - CurrentClampStimulusSeries
+  - CurrentClampSeries
+citation: Jing, Junzhan; Liu, Rui-Feng (2026) Electrophysiological Dataset of Local
+  Neuronal Microcircuits in the Primate Anterior Insular Cortex (Version draft) [Data
+  set]. DANDI Archive. https://dandiarchive.org/dandiset/001751/draft
 contributor:
 - affiliation: []
-  email: jingjunzhan@gmail.com
+  email: junzhan.jing@bcm.edu
   includeInCitation: true
   name: Jing, Junzhan
-  roleName:
-  - dcite:ContactPerson
+  roleName: []
   schemaKey: Person
 - email: rfengliu@gmail.com
   identifier: 0000-0002-3319-9939
+  includeInCitation: true
   name: Liu, Rui-Feng
   roleName:
-  - dcite:Author
-  - dcite:Conceptualization
-  - dcite:DataCollector
-  - dcite:DataCurator
-  - dcite:DataManager
-  - dcite:FormalAnalysis
-  - dcite:FundingAcquisition
-  - dcite:Investigation
-  - dcite:Maintainer
-  - dcite:ProjectMember
-  - dcite:Researcher
-  - dcite:Resources
-  - dcite:Software
-  - dcite:Validation
+  - dcite:ContactPerson
   schemaKey: Person
+- awardNumber: R01MH122169, R01MH120404
+  name: 'National Institute of Mental Health '
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 82425016, 82371095, 81961128021, 82301254
+  name: Natural Science Foundation of China
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 2022YEF0203200
+  name: National Key R&D Program of China
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 2021ZD0200100
+  name: National Science and Technology Innovation 2030 Major Program of China
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: 2023B0303020002
+  name: The Key Science and Technology Project of Guangdong Province, China
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2026-02-13T05:50:56.132747+00:00'
-description: The dataset contains the intracellular recordings from Macaque Anterior
-  Insular Cortex neurons. We used simutaneous multiple patch-clamp recording to collecte
-  the neuronal connectivity data of anterior insular cortex neurons in crab-eating
-  monkeys.
+description: This dataset includes intracellular recordings from neurons in the anterior
+  insular cortex of macaque monkeys. Neuronal connectivity was assessed using simultaneous
+  multi–patch-clamp recordings in crab-eating monkeys.
 ethicsApproval: []
 id: DANDI:001751/draft
 identifier: DANDI:001751
@@ -57,6 +85,7 @@ keywords:
 - Anterior insular cortex
 - Monkey
 - neuronal connection
+- Von Economo Neuron
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
@@ -72,10 +101,6 @@ relatedResource:
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
-studyTarget:
-- 'We simutaneously recorded multiple neurons in monkey AIC to investigate the connection
-  differences of VEN and PCs. '
-- We found VEN has sparse connections with their neiboring neurons compared to PCs.
 url: https://dandiarchive.org/dandiset/001751/draft
 version: draft
 wasGeneratedBy: []
