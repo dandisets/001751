@@ -95,9 +95,11 @@ name: Electrophysiological Dataset of Local Neuronal Microcircuits in the Primat
 protocol:
 - http://doi.org/10.1126/science.aaf6102
 relatedResource:
-- name: Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex
+- identifier: V1
+  name: Cell Atlas and Novel Signal Processing Strategy in Primate Insular Cortex
   relation: dcite:IsSourceOf
   schemaKey: Resource
+  url: https://doi.org/10.1038/s41556-026-02009-4
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.7.0
